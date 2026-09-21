@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ead8ce">
+<title>Nuestra lista de cosas por vivir ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" role="status" aria-live="polite">
+  <div class="preloader-inner">
+    <svg class="preloader-heart" viewBox="0 0 24 24"><path d="M12 20.2s-6.8-4.3-9.2-8.1C.9 9 2 4.8 6.1 4.2c2.2-.3 4 1 5 2.4 1-1.4 2.8-2.7 5-2.4 4.1.6 5.2 4.8 3.3 7.9-2.4 3.8-9.2 8.1-9.2 8.1Z"/></svg>
+    <span class="preloader-text">un momento, ya casi ♡</span>
+  </div>
+</div>
+
+<svg class="icon-sprite" aria-hidden="true">
+  <symbol id="icon-coffee" viewBox="0 0 24 24">
+    <path d="M3 8h13v5a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6V8Z"/>
+    <path d="M16 10h2.5a2.5 2.5 0 0 1 0 5H16"/>
+    <path d="M6 2c0 1 .8 1.4.8 2.3S6 5.7 6 6.5"/>
+    <path d="M10 2c0 1 .8 1.4.8 2.3S10 5.7 10 6.5"/>
+  </symbol>
+
+  <symbol id="icon-utensils" viewBox="0 0 24 24">
+    <path d="M7 2v8"/>
+    <path d="M4 2v5a3 3 0 0 0 6 0V2"/>
+    <path d="M7 10v12"/>
+    <path d="M17 2v20"/>
+    <path d="M17 2c2.8 2.2 3.8 5.4 3 9h-3"/>
+  </symbol>
+
+  <symbol id="icon-wine" viewBox="0 0 24 24">
+    <path d="M8 2h8l-1 7a4 4 0 0 1-8 0L8 2Z"/>
+    <path d="M12 13v7"/>
+    <path d="M8 22h8"/>
+  </symbol>
+
+  <symbol id="icon-cinema" viewBox="0 0 24 24">
+    <rect x="3" y="7" width="18" height="13" rx="2"/>
+    <path d="M3 7l3-4 3 4 3-4 3 4 3-4 3 4"/>
+  </symbol>
+
+  <symbol id="icon-book" viewBox="0 0 24 24">
+    <path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v18H7.5A3.5 3.5 0 0 0 4 23V5.5Z"/>
+    <path d="M20 5.5A3.5 3.5 0 0 0 16.5 2H13v18h3.5A3.5 3.5 0 0 1 20 23V5.5Z"/>
+  </symbol>
+
+  <symbol id="icon-music" viewBox="0 0 24 24">
+    <path d="M9 18V5l10-2v13"/>
+    <circle cx="6" cy="18" r="3"/>
+    <circle cx="16" cy="16" r="3"/>
+  </symbol>
+
+  <symbol id="icon-plane" viewBox="0 0 24 24">
+    <path d="M22 2 9.5 14.5"/>
+    <path d="m22 2-7 20-4-9-9-4 20-7Z"/>
+  </symbol>
+
+  <symbol id="icon-map" viewBox="0 0 24 24">
+    <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/>
+    <path d="M9 3v15"/>
+    <path d="M15 6v15"/>
+  </symbol>
+
+  <symbol id="icon-waves" viewBox="0 0 24 24">
+    <path d="M2 8c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/>
+    <path d="M2 13c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/>
+    <path d="M2 18c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/>
+  </symbol>
+
+  <symbol id="icon-car" viewBox="0 0 24 24">
+    <path d="m5 17-1 3"/>
+    <path d="m19 17 1 3"/>
+    <path d="M3 13h18"/>
+    <path d="m5 13 2-6h10l2 6"/>
+    <rect x="3" y="11" width="18" height="7" rx="2"/>
+    <circle cx="7" cy="16" r="1"/>
+    <circle cx="17" cy="16" r="1"/>
+  </symbol>
+
+  <symbol id="icon-headphones" viewBox="0 0 24 24">
+    <path d="M4 14v-2a8 8 0 0 1 16 0v2"/>
+    <path d="M4 14h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2Z"/>
+    <path d="M20 14h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2Z"/>
+  </symbol>
+
+  <symbol id="icon-pan" viewBox="0 0 24 24">
+    <path d="M3 10h12a5 5 0 0 1 0 10H8a5 5 0 0 1-5-5v-5Z"/>
+    <path d="M15 12h6"/>
+    <path d="M6 4c0 1 .8 1.4.8 2.3S6 7.7 6 8.5"/>
+    <path d="M10 4c0 1 .8 1.4.8 2.3S10 7.7 10 8.5"/>
+  </symbol>
+
+  <symbol id="icon-dice" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="3"/>
+    <circle cx="8" cy="8" r="1"/>
+    <circle cx="16" cy="8" r="1"/>
+    <circle cx="12" cy="12" r="1"/>
+    <circle cx="8" cy="16" r="1"/>
+    <circle cx="16" cy="16" r="1"/>
+  </symbol>
+
+  <symbol id="icon-sunrise" viewBox="0 0 24 24">
+    <path d="M4 18h16"/>
+    <path d="M6 18a6 6 0 0 1 12 0"/>
+    <path d="M12 2v3"/>
+    <path d="m4.2 6.2 2.1 2.1"/>
+    <path d="m19.8 6.2-2.1 2.1"/>
+  </symbol>
+
+  <symbol id="icon-dessert" viewBox="0 0 24 24">
+    <path d="M4 10h16"/>
+    <path d="M6 10v8h12v-8"/>
+    <path d="M8 10c0-3 2-5 4-5s4 2 4 5"/>
+    <path d="M12 5V2"/>
+  </symbol>
+
+  <symbol id="icon-picnic" viewBox="0 0 24 24">
+    <path d="M5 21h14"/>
+    <path d="m7 21 3-10"/>
+    <path d="m17 21-3-10"/>
+    <path d="M4 11h16"/>
+    <path d="M6 7h12l2 4H4l2-4Z"/>
+  </symbol>
+
+  <symbol id="icon-camera" viewBox="0 0 24 24">
+    <path d="M4 7h4l2-3h4l2 3h4v13H4V7Z"/>
+    <circle cx="12" cy="13" r="4"/>
+  </symbol>
+
+  <symbol id="icon-spark" viewBox="0 0 24 24">
+    <path d="M12 2v4"/>
+    <path d="M12 18v4"/>
+    <path d="M2 12h4"/>
+    <path d="M18 12h4"/>
+    <path d="m4.9 4.9 2.8 2.8"/>
+    <path d="m16.3 16.3 2.8 2.8"/>
+    <path d="m19.1 4.9-2.8 2.8"/>
+    <path d="m7.7 16.3-2.8 2.8"/>
+  </symbol>
+
+  <symbol id="icon-plus" viewBox="0 0 24 24">
+    <path d="M12 5v14"/>
+    <path d="M5 12h14"/>
+  </symbol>
+
+  <symbol id="icon-heartline" viewBox="0 0 24 24">
+    <path d="M12 20.2s-6.8-4.3-9.2-8.1C.9 9 2 4.8 6.1 4.2c2.2-.3 4 1 5 2.4 1-1.4 2.8-2.7 5-2.4 4.1.6 5.2 4.8 3.3 7.9-2.4 3.8-9.2 8.1-9.2 8.1Z"/>
+  </symbol>
+
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <path d="M5 12h14"/>
+    <path d="m13 6 6 6-6 6"/>
+  </symbol>
+
+  <symbol id="icon-bookmark" viewBox="0 0 24 24">
+    <path d="M6 3h12v18l-6-4-6 4V3Z"/>
+  </symbol>
+
+  <symbol id="icon-calendar" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2"/>
+    <path d="M16 2v4"/>
+    <path d="M8 2v4"/>
+    <path d="M3 10h18"/>
+  </symbol>
+
+  <symbol id="icon-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 7v5l3 3"/>
+  </symbol>
+
+  <symbol id="icon-repeat" viewBox="0 0 24 24">
+    <path d="m17 2 4 4-4 4"/>
+    <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+    <path d="m7 22-4-4 4-4"/>
+    <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+  </symbol>
+
+  <symbol id="icon-note" viewBox="0 0 24 24">
+    <path d="M5 3h11l3 3v15H5Z"/>
+    <path d="M8 9h8"/>
+    <path d="M8 13h8"/>
+    <path d="M8 17h5"/>
+  </symbol>
+
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="m20 6-11 11-5-5"/>
+  </symbol>
+
+  <symbol id="icon-external" viewBox="0 0 24 24">
+    <path d="M14 3h7v7"/>
+    <path d="m21 3-10 10"/>
+    <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/>
+  </symbol>
+
+  <symbol id="icon-download" viewBox="0 0 24 24">
+    <path d="M12 3v12"/>
+    <path d="m7 10 5 5 5-5"/>
+    <path d="M5 21h14"/>
+  </symbol>
+
+  <symbol id="icon-trash" viewBox="0 0 24 24">
+    <path d="M4 7h16"/>
+    <path d="M10 11v6"/>
+    <path d="M14 11v6"/>
+    <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"/>
+    <path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/>
+  </symbol>
+
+</svg>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="world-bg" aria-hidden="true"></div>
+<div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+<div class="light-orb" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="monogram" href="#inicio">E <span>♡</span> M</a>
+  <nav id="nav">
+    <a href="#momentos">Momentos</a>
+    <a href="#salidas">Salidas</a>
+    <a href="#aventuras">Aventuras</a>
+    <a href="#tradiciones">Tradiciones</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#mas">Más</a>
+  </nav>
+  <button class="menu" id="menu" aria-label="Menú"><i></i><i></i></button>
+</header>
+
+<main>
+<section class="hero wrap" id="inicio">
+  <div class="hero-card reveal">
+    <div class="hero-copy">
+      <span class="kicker">UN CAMINO MÁS BONITO, CONTIGO</span>
+      <h1><span class="line line-1">Nuestra lista</span><span class="line line-2">de cosas <em>por vivir</em> <b>♡</b></span></h1>
+      <p>Pequeños planes, grandes recuerdos y un montón de cosas que todavía podemos descubrir juntos.</p>
+      <div class="hero-actions">
+        <a class="pill primary" href="#momentos"><svg class="button-icon"><use href="#icon-arrow-right"/></svg> Ver nuestra lista</a>
+        <button class="pill glass" id="randomHero"><svg class="button-icon"><use href="#icon-spark"/></svg> Elegir un plan al azar</button>
+      </div>
+    </div>
+
+    <div class="paper-note hero-note">
+      <small>coleccionemos</small>
+      <strong>momentos</strong>
+      <small>por siempre ♡</small>
+    </div>
+
+    <div class="hero-caption">E + M · más historias por vivir</div>
+  </div>
+</section>
+
+<section class="promise wrap reveal">
+  <span></span>
+  <p>“No hace falta que todo sea extraordinario para que termine siendo inolvidable.”</p>
+  <span></span>
+</section>
+
+
+<section class="return-note wrap reveal">
+  <div class="return-note-card">
+    <div class="return-note-mark">♡</div>
+    <div class="return-note-copy">
+      <span class="kicker dark">CUANDO REGRESÉS DE TU VIAJE</span>
+      <h2>Lo que se viene, mi amor ♡</h2>
+      <p>
+        Quiero que sigamos sumando planes, lugares, historias y momentos nuestros.
+        Sin correr, sin llenar una agenda por llenar… simplemente disfrutando todo lo bonito que venga.
+      </p>
+    </div>
+    <div class="return-note-signature">
+      <small>cuando estés de vuelta</small>
+      <strong>que venga todo lo bonito ♡</strong>
+    </div>
+  </div>
+</section>
+
+<section class="chapter wrap" id="momentos">
+  <div class="chapter-title reveal">
+    <div>
+      <span class="kicker dark">LOS PLANES DE CUALQUIER DÍA</span>
+      <h2>Momentos <em>simples</em> ♡</h2>
+    </div>
+    <p>Esos planes que no necesitan una fecha especial para sentirse bonitos.</p>
+  </div>
+
+  <div class="card-grid">
+    <article class="plan-card reveal" data-plan="Ir a brunch juntos">
+      <div class="image"><img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=900&q=86" alt="Brunch"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-coffee"/></svg></span><h3>Ir a brunch</h3><p>Buscar un lugar bonito y probar algo nuevo juntos.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Almorzar juntos">
+      <div class="image personal-photo lunch-photo"><!--span class="image-badge">nuestro día</span--><img src="lunch-us.jpg" alt="Nosotros en un almuerzo"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-utensils"/></svg></span><h3>Almorzar juntos</h3><p>Porque un almuerzo contigo también puede sentirse como recuerdo bonito.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Cenar juntos">
+      <div class="image personal-photo dinner-photo"><!--span class="image-badge">nuestra noche</span--><img src="dinner-us.jpg" alt="Nosotros en una cena"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-wine"/></svg></span><h3>Una cena juntos</h3><p>Una salida, una noche bonita y nosotros guardando otro momento más.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Ir al cine">
+      <div class="image"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=86" alt="Cine"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-cinema"/></svg></span><h3>Ir al cine</h3><p>Película, palomitas y conversación después.</p></div>
+    </article>
+  </div>
+  <aside class="paper-note scribble right">Las cosas<br>simples también<br>se vuelven historias ♡</aside>
+</section>
+
+<section class="chapter band wrap" id="salidas">
+  <div class="chapter-title reveal">
+    <div>
+      <span class="kicker dark">LUGARES PARA HACER NUESTROS</span>
+      <h2>Salir <em>juntos</em> ♡</h2>
+    </div>
+    <p>Cafés, libros, música y lugares que podrían terminar llevando un pedacito de nosotros.</p>
+  </div>
+  <div class="card-grid">
+    <article class="plan-card reveal" data-plan="Ir por un matcha o un café juntos">
+      <div class="image"><span class="image-badge soft-green">matcha date</span><img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=900&q=86" alt="Matcha y café"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-coffee"/></svg></span><h3>Un matcha o un café</h3><p>Encontrar un rincón bonito para compartir un matcha, un café o simplemente el rato.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Probar un restaurante nuevo">
+      <div class="image"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=86" alt="Restaurante"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-utensils"/></svg></span><h3>Restaurante nuevo</h3><p>Pedir cosas distintas y compartir para probar más.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Ir a una librería juntos">
+      <div class="image"><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=86" alt="Librería"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-book"/></svg></span><h3>Ir a una librería</h3><p>Mirar libros y escoger alguno para el otro.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Ir a un concierto">
+      <div class="image concert-photo personal-photo"><!--span class="image-badge">nuestra canción</span--><img src="concert-us.jpeg" alt="Nosotros en un concierto"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-music"/></svg></span><h3>Ir a un concierto</h3><p>Guardar una canción ligada a un recuerdo nuestro.</p></div>
+    </article>
+  </div>
+  <aside class="paper-note scribble left">Una salida<br>también puede llenarse<br>de recuerdos ♡</aside>
+</section>
+
+<section class="mountain-break wrap reveal">
+  <div>
+    <span class="kicker">A VECES SOLO HAY QUE DECIR</span>
+    <h2>“¿Yo rifo?”</h2>
+    <p>Y dejar que el dís haga el resto.</p>
+  </div>
+</section>
+
+<section class="chapter wrap" id="aventuras">
+  <div class="chapter-title reveal">
+    <div>
+      <span class="kicker dark">CAMBIAR DE PAISAJE</span>
+      <h2>Aventuras <em>juntos</em> ♡</h2>
+    </div>
+    <p>Planificando juntos esta parte puede tener de todo: conocer otro país, descubrir un departamento nuevo, escaparnos a una playa y seguir sumando lugares a nuestra historia.</p>
+  </div>
+  <div class="card-grid">
+    <article class="plan-card reveal" data-plan="Viajar juntos a otro país">
+      <div class="image"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=86" alt="Viajar a otro país"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-plane"/></svg></span><h3>Viajar a otro país</h3><p>Elegir un destino nuevo y descubrirlo juntos desde el primer día.</p></div>
+    </article>
+
+    <article class="plan-card reveal" data-plan="Conocer juntos otro departamento">
+      <div class="image"><img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=86" alt="Viajar a otro departamento"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-map"/></svg></span><h3>Conocer otro departamento</h3><p>Salir de la rutina y descubrir un rincón nuevo más cerca de casa.</p></div>
+    </article>
+
+    <article class="plan-card reveal" data-plan="Ir juntos a una playa">
+      <div class="image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=86" alt="Ir a una playa"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-waves"/></svg></span><h3>Ir a una playa</h3><p>Pasar el día juntos y quedarnos hasta ver cómo cambia el cielo.</p></div>
+    </article>
+
+    <article class="plan-card reveal" data-plan="Hacer una escapada de fin de semana">
+      <div class="image"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=86" alt="Escapada de fin de semana"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-car"/></svg></span><h3>Una escapada juntos</h3><p>Preparar una mochila y cambiar de paisaje por un par de días.</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="chapter band wrap" id="tradiciones">
+  <div class="chapter-title reveal">
+    <div>
+      <span class="kicker dark">IDEAS DE TRADICIONES</span>
+      <h2>Ejemplo de <em>tradiciones</em> ♡</h2>
+    </div>
+    <p>Porque hay planes que se vuelven todavía mejores cuando dejan de ser “la primera vez”.</p>
+  </div>
+  <div class="card-grid">
+    <article class="plan-card reveal" data-plan="Retomar el club de lectura">
+      <div class="image"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=86" alt="Libros"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-book"/></svg></span><h3>Club de lectura</h3><p>Elegir un libro, leerlo y volver a comentarlo juntos.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Hacer nuestra playlist">
+      <div class="image"><img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=900&q=86" alt="Música"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-headphones"/></svg></span><h3>Nuestra playlist</h3><p>Canciones para viajes, etapas y momentos.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Cocinar juntos">
+      <div class="image"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=86" alt="Cocinar"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-pan"/></svg></span><h3>Cocinar juntos</h3><p>Una receta, música y permiso para improvisar.</p></div>
+    </article>
+    <article class="plan-card reveal" data-plan="Tener una noche de juegos">
+      <div class="image"><img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=900&q=86" alt="Juegos"></div>
+      <div class="card-copy"><span class="natural-icon"><svg><use href="#icon-dice"/></svg></span><h3>Noche de juegos</h3><p>Cartas, juegos y descubrir quién pierde peor.</p></div>
+    </article>
+  </div>
+</section>
+
+
+<section class="our-calendar wrap reveal" id="agenda">
+  <div class="calendar-shell">
+    <div class="calendar-intro">
+      <div>
+        <span class="kicker dark">NUESTROS PRÓXIMOS PLANES</span>
+        <h2>Que las ideas también<br><em>encuentren su día.</em></h2>
+      </div>
+      <div class="calendar-intro-copy">
+        <p>
+          Cuando alguno de estos planes nos guste, podemos ponerle fecha y convertirlo
+          en algo que realmente vayamos a vivir.
+        </p>
+        <div class="calendar-legend">
+          <span><i></i> Programado</span>
+          <span><i></i> Recurrente</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendar-layout">
+      <div class="month-card" aria-hidden="true">
+        <div class="month-card-top">
+          <span class="calendar-mark"><svg><use href="#icon-calendar"/></svg></span>
+          <div>
+            <small>nuestra agenda</small>
+            <strong id="currentMonthLabel">Este mes</strong>
+          </div>
+        </div>
+
+        <div class="mini-weekdays">
+          <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+        </div>
+        <div class="mini-month-grid" id="miniMonthGrid"></div>
+
+        <div class="month-card-note">
+          <span>♡</span>
+          <p>Un plan con fecha deja de ser “algún día”.</p>
+        </div>
+      </div>
+
+      <div class="scheduled-column">
+        <div class="scheduled-head">
+          <div>
+            <small>AGENDA COMPARTIDA</small>
+            <strong id="scheduledCount">0 planes programados</strong>
+          </div>
+          <button class="calendar-add-button" id="quickSchedule">
+            <svg><use href="#icon-calendar"/></svg>
+            Agendar una idea
+          </button>
+        </div>
+
+        <div class="scheduled-list" id="scheduledPlans">
+          <div class="calendar-empty" id="calendarEmpty">
+            <div class="empty-calendar-icon"><svg><use href="#icon-calendar"/></svg></div>
+            <h3>Todavía no hemos puesto fecha.</h3>
+            <p>Elegí cualquier plan del sitio y tocá <strong>“Programar este plan”</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more wrap" id="mas">
+  <div class="more-card reveal">
+    <div class="more-copy">
+      <span class="kicker">Y ESTA LISTA NO TERMINA AQUÍ</span>
+      <h2>Más planes.<br>Más historias.<br><em>Más nosotros.</em></h2>
+      <p>Un picnic, un postre de noche, un museo, fotos de una aventura, un amanecer, un atardecer entre muchas otras…</p>
+      <button class="pill primary" id="addPlan"><svg class="button-icon"><use href="#icon-plus"/></svg> Agregar una idea nuestra</button>
+    </div>
+    <div class="mini-list" id="personalList"></div>
+    <div class="paper-note more-note">Y lo mejor…<br><strong>aún está por venir</strong> ♡</div>
+  </div>
+</section>
+
+<section class="closing wrap reveal">
+  <div class="closing-card">
+    <span class="kicker dark">AL FINAL</span>
+    <h2>Lo bonito no es solo hacer grandes planes.</h2>
+    <p>También quiero los días normales contigo: los matchas, cafes, las películas, los libros, las canciones, los almuerzos, las cenas y esos momentos que van construyendo nuestra relación poco a poco.</p>
+    <div class="heart-rule"><i></i><b>♡</b><i></i></div>
+    <strong class="signature">By edmiguedo ❤️</strong>
+  </div>
+</section>
+</main>
+
+<footer class="footer wrap">
+  <span>E ♡ M</span>
+  <p>Más historias por vivir.</p>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="backdrop" data-close></div>
+  <div class="modal-box plan-preview-box">
+    <button class="x" data-close>×</button>
+    <span class="kicker dark">PLAN PARA NOSOTROS</span>
+    <div class="modal-heart">♡</div>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+
+    <div class="preview-actions">
+      <button class="pill primary schedule-trigger" id="scheduleFromPlan">
+        <svg class="button-icon"><use href="#icon-calendar"/></svg>
+        Programar este plan
+      </button>
+      <button class="pill subtle-preview" data-close><svg class="button-icon"><use href="#icon-bookmark"/></svg> Guardar la idea para después</button>
+    </div>
+
+    <small class="calendar-hint">
+      Elegís fecha y horario después. Nada se agrega a Google Calendar sin que lo confirmés.
+    </small>
+  </div>
+</div>
+
+
+
+<div class="schedule-modal" id="scheduleModal" aria-hidden="true">
+  <div class="backdrop" data-close-schedule></div>
+
+  <div class="schedule-box" role="dialog" aria-modal="true" aria-labelledby="scheduleTitle">
+    <button class="x" data-close-schedule aria-label="Cerrar">×</button>
+
+    <div class="schedule-header">
+      <div class="calendar-emblem">
+        <svg><use href="#icon-calendar"/></svg>
+      </div>
+      <div>
+        <span class="kicker dark">PONGÁMOSLE FECHA</span>
+        <h3 id="scheduleTitle">Programar nuestro plan</h3>
+      </div>
+    </div>
+
+    <div class="selected-plan-banner">
+      <small>PLAN ELEGIDO</small>
+      <strong id="schedulePlanName">Nuestro plan</strong>
+      <p id="schedulePlanDescription"></p>
+    </div>
+
+    <form id="scheduleForm" autocomplete="off">
+      <div class="calendar-field full">
+        <label for="eventDate">
+          <svg><use href="#icon-calendar"/></svg>
+          Fecha
+        </label>
+        <input id="eventDate" type="date" required>
+      </div>
+
+      <div class="calendar-field">
+        <label for="startTime">
+          <svg><use href="#icon-clock"/></svg>
+          Empieza
+        </label>
+        <input id="startTime" type="time" required>
+      </div>
+
+      <div class="calendar-field">
+        <label for="endTime">
+          <svg><use href="#icon-clock"/></svg>
+          Termina
+        </label>
+        <input id="endTime" type="time" required>
+      </div>
+
+      <div class="repeat-card full">
+        <div class="repeat-main">
+          <div class="repeat-icon"><svg><use href="#icon-repeat"/></svg></div>
+          <div>
+            <strong>¿Queremos repetirlo?</strong>
+            <small>Como un evento recurrente del calendario.</small>
+          </div>
+          <label class="pretty-switch">
+            <input type="checkbox" id="repeatToggle">
+            <span></span>
+          </label>
+        </div>
+
+        <div class="repeat-options" id="repeatOptions">
+          <label for="repeatFrequency">Repetir</label>
+          <select id="repeatFrequency">
+            <option value="WEEKLY">Cada semana</option>
+            <option value="MONTHLY">Cada mes</option>
+            <option value="YEARLY">Cada año</option>
+            <option value="DAILY">Cada día</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calendar-field full">
+        <label for="eventNotes">
+          <svg><use href="#icon-note"/></svg>
+          Una nota para nosotros
+        </label>
+        <textarea id="eventNotes" rows="3" maxlength="220" placeholder="Ej. Comprar las entradas, reservar mesa, llevar cámara..."></textarea>
+      </div>
+
+      <div class="calendar-preview full">
+        <div>
+          <small>ASÍ QUEDARÁ</small>
+          <strong id="schedulePreviewDate">Elegí una fecha</strong>
+        </div>
+        <span id="schedulePreviewRepeat">Una sola vez</span>
+      </div>
+
+      <div class="schedule-actions full">
+        <button type="button" class="calendar-secondary" id="saveLocalEvent">
+          <svg><use href="#icon-check"/></svg>
+          Guardar en nuestra agenda
+        </button>
+
+        <button type="button" class="calendar-google" id="openGoogleCalendar">
+          <svg><use href="#icon-external"/></svg>
+          Guardar y abrir Google Calendar
+        </button>
+      </div>
+
+      <button type="button" class="ics-link full" id="downloadIcs">
+        <svg><use href="#icon-download"/></svg>
+        También puedo descargarlo como archivo de calendario (.ics)
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<div class="idea-modal" id="ideaModal" aria-hidden="true">
+  <div class="backdrop" data-close-idea></div>
+
+  <div class="idea-box" role="dialog" aria-modal="true" aria-labelledby="ideaTitle">
+    <button class="x" data-close-idea aria-label="Cerrar">×</button>
+
+    <span class="kicker dark">UNA IDEA NUESTRA</span>
+    <div class="idea-heart">♡</div>
+
+    <h3 id="ideaTitle">¿Qué te gustaría vivir juntos?</h3>
+    <p class="idea-lead">Puede ser algo enorme o algo sencillo. Lo bonito es que sea una idea de nosotros.</p>
+
+    <label class="idea-label" for="ideaInput">Nuestro próximo plan</label>
+    <textarea
+      id="ideaInput"
+      maxlength="120"
+      rows="3"
+      placeholder="Ej. Ir a conocer Granada un fin de semana..."
+    ></textarea>
+
+    <div class="idea-suggestions">
+      <button type="button" data-suggestion="Viajar juntos a otro país"><svg class="suggestion-icon"><use href="#icon-plane"/></svg> Otro país</button>
+      <button type="button" data-suggestion="Conocer juntos otro departamento"><svg class="suggestion-icon"><use href="#icon-map"/></svg> Otro departamento</button>
+      <button type="button" data-suggestion="Ir juntos a una playa"><svg class="suggestion-icon"><use href="#icon-waves"/></svg> Una playa</button>
+      <button type="button" data-suggestion="Tener una cena especial juntos"><svg class="suggestion-icon"><use href="#icon-wine"/></svg> Una cena</button>
+      <button type="button" data-suggestion="Elegir un libro para nuestro club de lectura"><svg class="suggestion-icon"><use href="#icon-book"/></svg> Un libro</button>
+    </div>
+
+    <div class="idea-footer">
+      <span id="ideaCounter">0 / 120</span>
+      <div class="idea-actions">
+        <button type="button" class="pill subtle" data-close-idea>Ahora no</button>
+        <button type="button" class="pill primary" id="saveIdea"><svg class="button-icon"><use href="#icon-heartline"/></svg> <span id="saveIdeaLabel">Guardar en nuestra lista</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
